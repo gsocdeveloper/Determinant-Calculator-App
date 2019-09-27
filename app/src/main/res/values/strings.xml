@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Determinant Calculator</string>
+    <string name="select_order_of_determinant">Select order of Determinant</string>
+    <string name="order_1">Order 2</string>
+    <string name="order_2">Order 3</string>
+    <string name="further_orders_coming_soon">Further orders coming soon...</string>
+    <string name="fb"><u>Facebook Profile</u></string>
+    <string name="insta"><u>Instagram Profile</u></string>
+</resources>

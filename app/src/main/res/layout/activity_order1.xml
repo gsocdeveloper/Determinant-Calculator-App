@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prathameshshiralkar.apps.determinantcalculator.Order1">
+
+    <ImageView
+        android:id="@+id/about3"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:onClick="gotoabout"
+        android:tint="@color/colorPrimaryDark"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <TextView
+
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="41dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="221dp"
+        android:layout_height="202dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="144dp"
+        app:srcCompat="@mipmap/determinant"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="95dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="200dp"
+        android:layout_height="495dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="-23dp">
+
+        <EditText
+            android:id="@+id/a1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/a2"
+            android:layout_alignBottom="@+id/a2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginLeft="37dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="133dp"
+            android:nextFocusDown="@+id/a2" />
+
+        <EditText
+            android:id="@+id/b2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/a2"
+            android:layout_alignLeft="@+id/a2"
+            android:layout_alignBottom="@+id/b1"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:nextFocusUp="@+id/button3"
+            android:imeOptions="actionDone"/>
+
+        <EditText
+            android:id="@+id/b1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a1"
+            android:layout_alignStart="@+id/a1"
+            android:layout_alignLeft="@+id/a1"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:nextFocusDown="@+id/b2" />
+
+        <EditText
+            android:id="@+id/a2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="52dp"
+            android:layout_toEndOf="@+id/a1"
+            android:layout_toRightOf="@+id/a1"
+            android:ems="10"
+            android:inputType="numberSigned"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="121dp"
+            tools:layout_editor_absoluteY="133dp"
+            android:nextFocusDown="@+id/b1" />
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:onClick="o2_cal"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="83dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="20dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-5644373101085191/8176400627" />
+
+</RelativeLayout>
